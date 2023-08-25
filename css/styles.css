@@ -1,173 +1,374 @@
-.link{
+body {
+    font-family: "Roboto", sans-serif;
+    color: #434455;
+    background: #ffffff;
+}
+
+ul,
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+a {
     text-decoration: none;
 }
 
-.list{
-    list-style-type: none;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
 }
 
-button{
-    cursor: pointer;
+p {
+    margin: 0;
+    padding: 0;
 }
 
-body{
-    font-family: "Roboto", sans-serif;
-    color: #434455;
-    background-color: #FFFFFF;
+img {
+    display: block;
+    max-width: 100%;
 }
 
-.logotype{
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+footer {
+    margin: 0 auto;
+}
+
+section {
+    max-width: 100%;
+    padding: 120px 0;
+}
+
+.container {
+    max-width: 1158px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.container {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header */
+
+.header-top {
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.navi {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
     color: #4d5ae5;
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+    display: block;
+    margin-right: 76px;
 }
 
-.part-logo{
+.logo span {
     color: #2e2f42;
 }
 
-.menu-link{
-    font-weight: 500;
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-list {
+    display: flex;
+    gap: 40px;
+}
+
+.menu-item {
+    color: #2e2f42;
+    font-family: inherit;
     font-size: 16px;
+    font-weight: 500;
     line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
+    letter-spacing: 0.32px;
+    padding: 24px 0;
 }
 
-.menu-link:hover,
-.menu-link:focus{
+.menu-item:hover {
     color: #404bbf;
 }
 
-.contacts{
+.menu-item:focus {
+    color: #404bbf;
+}
+
+.address {
+    display: flex;
     font-style: normal;
 }
 
-.contacts-link{
+.adress-item {
+    color: #434455;
+    font-family: inherit;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
+    letter-spacing: 0.32px;
 }
 
-.contacts-link:hover,
-.contacts-link:focus{
+.adress-item:hover {
     color: #404bbf;
 }
 
-.hero{
-    background-color: #2e2f42;
+.adress-item:focus {
+    color: #404bbf;
 }
 
-.main-title{
+.adress-list {
+    display: flex;
+    gap: 40px;
+    padding: 24px 0;
+    margin-left: auto;
+}
+
+/* Main */
+
+.section-main {
+    background: #2e2f42;
+    padding: 188px 0;
+}
+
+.main-title {
+    max-width: 496px;
+    color: #ffffff;
+    font-family: inherit;
     font-size: 56px;
+    font-weight: 700;
     line-height: 1.07;
+    letter-spacing: 1.12px;
     text-align: center;
-    letter-spacing: 0.02em;
+    margin: 0 auto;
+}
+
+.button {
+    display: block;
+    background-color: #4d5ae5;
     color: #ffffff;
-}
-
-.main-button{
-    background-color: #4D5AE5;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
+    cursor: pointer;
+    font-family: inherit;
     font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: #ffffff;
-}
-
-.main-button:hover,
-.main-button:focus{
-    background-color: #404BBF;
-}
-
-.benefits-list-title{
     font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
+    line-height: 1.5;
+    letter-spacing: 0.64px;
+    border: none;
+    border-radius: 4px;
+    padding: 16px 32px;
+    margin: 0 auto;
+    margin-top: 48px;
+    min-width: 169px;
+    height: 56px;
+}
+
+.button:hover {
+    background-color: #404bbf;
+}
+
+.button:focus {
+    background-color: #404bbf;
+}
+
+/* Priorities */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container-list {
+    margin: 0 auto;
+}
+
+.list-one {
+    display: flex;
+    gap: 24px;
+    flex-basis: 264px;
+}
+
+.list-two {
+    width: calc((100% - 72px) / 4);
+}
+
+.title-hide {
+    display: none;
+}
+
+.priorities-list {
     color: #2e2f42;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+    margin-bottom: 8px;
 }
 
-.benefits-list-text{
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+.paragraph {
     color: #434455;
-}
-
-.team{
-    background-color: #F4F4FD;
-}
-
-.team-list-title{
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: #2e2f42;
-}
-
-.team-list-item{
-    background-color: #FFFFFF;
-}
-
-.team-name-title{
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-
-}
-
-.team-text{
+    font-family: inherit;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.32px;
+}
+
+/* Our team */
+
+.section-team {
+    background-color: #f4f4fd;
+    margin: 0 auto;
+}
+
+.list-three {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    flex-basis: 264px;
+}
+
+.team-image {
+    background-color: #ffffff;
+    width: calc((100% - 72px) / 4);
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 0 0 4px 4px;
+}
+
+.team-section {
+    padding: 32px 0;
+}
+
+.main-title-list {
+    color: #2e2f42;
+    font-family: inherit;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 72px;
+}
+
+.section-title-list {
+    color: #2e2f42;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.paragraph-next {
     color: #434455;
-}
-
-.portfolio-title{
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: #2e2f42;
-}
-
-.portfolio-list-title{
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-}
-
-.portfolio-list-text{
+    font-family: inherit;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;;
+    letter-spacing: 0.32px;
+    text-align: center;
 }
 
-.about-us{
+/* Portfolio */
+
+.portfolio-title-list {
+    color: #2e2f42;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+    margin-bottom: 8px;
+}
+
+.paragraph-portfolio {
+    color: #434455;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+}
+
+.box-list {
+    cursor: pointer;
+
+    width: calc((100% - 48px) / 3);
+}
+
+.portfolio-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+}
+
+.portfolio-section {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+
+/* Footer */
+
+.footer {
     background-color: #2e2f42;
+    padding: 100px 0;
 }
 
-.about-us-part-logo{
+.logo-footer {
+    display: inline-block;
+    color: #4d5ae5;
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.logo-footer-span {
     color: #f4f4fd;
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
 }
 
-.about-us-text{
+.paragraph-footer {
+    display: block;
+    max-width: 264px;
+    color: #f4f4fd;
+    font-family: Roboto;
+    font-size: 16px;
     line-height: 1.5;
-    color: #F4F4FD;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.32px;
 }
